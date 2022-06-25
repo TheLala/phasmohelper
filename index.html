@@ -152,8 +152,12 @@
 						<ul style="margin-left:15px">
 							<i>Initial observations</i>
 							<li><font color="deeppink">When Hunting,</font> it always knows the locations of the players.</li>
-							<li><font color="tomato">Hunting Speed</font> moves quickly when no player is in sight. Drastically slows down when near a player</li>
+							<li><font color="deeppink">When Hunting,</font> it initially targets the closest player.</li>
+							<li><font color="deeppink">When Hunting,</font> randomly changes target to nearest player.</li>
+							<li><font color="tomato">Hunting Speed</font> based on proximity to nearest player. 3m/s at 6m or more. 0.4m/s at 2.5m or less.</li>
 							<li><font color="orange">Average Sanity Hunt</font> is decreased from 50% to 40%.</li>
+							<li>Increased chance for DOTS and Ghost Writing evidence</li>
+							<li>Has a 33% chance to respond with a unique spirit box sound when player is within 1m of ghost</li>
 						</ul>
 						<h4>Evidence</h4>
 					</div>
@@ -304,9 +308,10 @@
 						<ul style="margin-left:15px">
 							<i>Initial observations</i>
 							<li><font color="deeppink">When Hunting,</font> a smudge stick will disorient the ghost for 12 seconds, up from the usual 6.</li>
-							<li><font color="tomato">Hunting Speed</font> increases as average sanity drops.</li>
+							<li><font color="tomato">Hunting Speed</font> increases as average sanity drops. 1.5m/s at 50%. 2.25m/s at 0%.</li>
 							<li><font color="tomato">Hunting Speed</font> increases when in sight of a player.</li>
-							<li><font color="plum">Sanity Loss</font> passively drops when player is "cursed" by receiving a response from the spirit box. Sanity pills appear to remove the curse.</li>
+							<li><font color="plum">Sanity Loss</font> passively drops at twice the normal rate when player is "cursed" by receiving a response from the spirit box or hearing a paranomal sound through parabolic mic . Sanity pills remove the curse.</li>
+							<li><font color="plum">Sanity Loss</font> from curse is paused when outside the location, but is not affected by stading in light or near a candle.</li>
 						</ul>
 						<h4>Evidence</h4>
 					</div>
@@ -570,9 +575,11 @@
 						<h4>Unique Features</h4>
 						<ul style="margin-left:15px">
 							<i>Initial observations</i>
-							<li><font color="orange">Average Sanity Hunt</font> appears to decrease over time, dropping below the standard 50%</li>
-							<li><font color="tomato">Hunting Speed</font> appears to decrease over time, with forced early hunts (via cursed possession) being faster than normal and later hunts being slower</li>
-							<li><font color="aqua">Ghost events</font> are more likely to occur early in an investigation and become more infrequent as time goes on</li>
+							<li><font color="orange">Average Sanity Hunt</font> starts at 75%. Decreases by 6% each time the ghost ages.</li>
+							<li><font color="tomato">Hunting Speed</font> starts at 2.75m/s. Decreases by 0.175m/s each time the ghost ages.</li>
+							<li><font color="aqua">Ghost events</font> and interactions are twice as likely to happen at the start of an investigation. Decreases by 15% each time the ghost ages.</li>
+							<li>Ghost will attempt to age every 1 to 2 minutes. If a player is present in the same room as the ghost when this attempt happens it will succeed, otherwise it will attempt again in another 30 seconds.</li>
+							<li>Increased chance for DOTS and Ghost Writing evidence</li>
 						</ul>
 						<h4>Evidence</h4>
 					</div>
